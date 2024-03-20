@@ -50,7 +50,8 @@ class greedySearchEightQueens(object):
                 attacks += 1
             if self.attacksInRightTopDiagonal(positions, i):
                 attacks += 1
-        return attacks       
+        return attacks
+
     def attackInSameLine(self, positions, index):
         positionsAtRight = positions[index + 1:]
         return len([x for x in positionsAtRight if x == positions[index]]) > 0
